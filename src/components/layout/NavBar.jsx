@@ -6,9 +6,33 @@ const NavBar = () => (
     <img src={logo} alt="Space Traveler's Hub logo" />
     <span className="nav-brand">Space Traveler&apos;s Hub</span>
     <div className="nav-links">
-      <NavLink to="/rockets">Rockets</NavLink>
-      <NavLink to="/missions">Missions</NavLink>
-      <NavLink to="profile">My Profile</NavLink>
+      <NavLink
+        to="/rockets"
+        style={({ isActive }) => ({
+          textDecoration: isActive ? 'underline' : 'none',
+          color: isActive ? '#00d7c6' : 'RGB(246, 141, 54)',
+        })}
+      >
+        Rockets
+      </NavLink>
+      <NavLink
+        to="/missions"
+        style={({ isActive }) => ({
+          textDecoration: isActive ? 'underline' : 'none',
+          color: isActive ? '#00d7c6' : 'RGB(246, 141, 54)',
+        })}
+      >
+        Missions
+      </NavLink>
+      <NavLink
+        to="profile"
+        style={({ isActive }) => ({
+          textDecoration: isActive ? 'underline' : 'none',
+          color: isActive ? '#00d7c6' : 'RGB(246, 141, 54)',
+        })}
+      >
+        My Profile
+      </NavLink>
     </div>
   </div>
 );
