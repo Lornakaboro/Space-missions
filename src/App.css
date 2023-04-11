@@ -34,6 +34,11 @@ body {
   gap: 40px;
 }
 
+
+ .active-link {
+  text-decoration: underline !important;
+}
+
 .nav-links a {
   text-decoration: none;
 }
