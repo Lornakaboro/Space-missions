@@ -1,7 +1,7 @@
 import { Routes, Route } from 'react-router-dom';
 import './App.css';
 import Layout from './components/layout/Layout';
-import Missions from './routes/mission';
+import Missions from './routes/missions';
 import Rockets from './routes/rockets';
 import Profile from './routes/profile';
 

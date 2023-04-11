@@ -37,3 +37,34 @@ body {
 .nav-links a {
   text-decoration: none;
 }
+
+.rocket-item {
+  margin: 15px 0;
+  display: flex;
+  gap: 10px;
+}
+
+.rocket-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.rocket-item img {
+  width: 180px;
+}
+
+.rocket-item button {
+  padding: 5px 10px;
+}
+
+.rocket-item button.reserve {
+  background-color: rgb(11, 11, 151);
+  color: white;
+  border: none;
+}
+
+.rocket-item button.cancel {
+  border: 1px solid gray;
+  background-color: transparent;
+}
