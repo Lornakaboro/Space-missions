@@ -1,6 +1,11 @@
+import MyMissions from '../components/profiles/MyMissions';
+
 const Profile = () => (
-  <section>
-    <h1>Profile</h1>
+  <section className="profile">
+    <MyMissions />
+    <div className="myrockets">
+      <h2>My Rockets</h2>
+    </div>
   </section>
 );
 
