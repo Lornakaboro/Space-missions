@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Mission Mission component renders correctly 1`] = `
+<table>
+  <thead>
+    <tr>
+      <th
+        className="t-name"
+      >
+        Mission
+      </th>
+      <th
+        className="t-description"
+      >
+        Description
+      </th>
+      <th
+        className="t-status"
+      >
+        Status
+      </th>
+      <th
+        className="t-action"
+      >
+         
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr
+      className="mission-item"
+    >
+      <td
+        className="mission-name"
+      >
+        Test Mission
+      </td>
+      <td
+        className="mission-decription"
+      >
+        This is a test mission
+      </td>
+      <td
+        className="join-status"
+      >
+        <span
+          className="unreserved"
+        >
+          NOT A MEMBER
+        </span>
+      </td>
+      <td
+        className="mission-action"
+      >
+        <button
+          className="join-mission"
+          onClick={[Function]}
+          type="button"
+        >
+          Join Mission
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+`;

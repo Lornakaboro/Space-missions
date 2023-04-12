@@ -1,10 +1,9 @@
 import { render, screen } from '@testing-library/react';
 import { Provider } from 'react-redux';
 import '@testing-library/jest-dom';
-
 import configureMockStore from 'redux-mock-store';
 import thunk from 'redux-thunk';
-import Missions from '../../src/routes/missions';
+import Missions from '../../routes/missions';
 
 const middlewares = [thunk];
 const mockStore = configureMockStore(middlewares);
@@ -31,18 +30,16 @@ const initialState = {
 };
 
 jest.mock('axios', () => ({
-  get: jest.fn(() =>
-    Promise.resolve({
-      data: [
-        {
-          mission_id: 'a1',
-          mission_name: 'Test Mission',
-          description: 'This is a test mission',
-          reserved: false,
-        },
-      ],
-    }),
-  ),
+  get: jest.fn(() => Promise.resolve({
+    data: [
+      {
+        mission_id: 'a1',
+        mission_name: 'Test Mission',
+        description: 'This is a test mission',
+        reserved: false,
+      },
+    ],
+  })),
 }));
 
 // const mockStore = configureStore([]);

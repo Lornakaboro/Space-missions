@@ -3,8 +3,8 @@ import { render, screen, fireEvent } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import renderer from 'react-test-renderer';
 import { useDispatch } from 'react-redux';
-import Mission from '../../src/components/missions/Mission';
-import { missionHandler } from '../../src/redux/missions/missionsSlice';
+import Mission from '../../components/missions/Mission';
+import { missionHandler } from '../../redux/missions/missionsSlice';
 
 jest.mock('react-redux', () => ({
   ...jest.requireActual('react-redux'),
@@ -12,18 +12,16 @@ jest.mock('react-redux', () => ({
 }));
 
 jest.mock('axios', () => ({
-  get: jest.fn(() =>
-    Promise.resolve({
-      data: [
-        {
-          mission_id: 'a1',
-          mission_name: 'Test Mission',
-          description: 'This is a test mission',
-          reserved: false,
-        },
-      ],
-    }),
-  ),
+  get: jest.fn(() => Promise.resolve({
+    data: [
+      {
+        mission_id: 'a1',
+        mission_name: 'Test Mission',
+        description: 'This is a test mission',
+        reserved: false,
+      },
+    ],
+  })),
 }));
 
 describe('Mission', () => {

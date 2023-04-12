@@ -2,7 +2,7 @@ import React from 'react';
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import { useSelector } from 'react-redux';
-import MyMissions from '../../src/components/profiles/MyMissions';
+import MyMissions from '../../components/profiles/MyMissions';
 
 jest.mock('react-redux', () => ({
   useSelector: jest.fn(),

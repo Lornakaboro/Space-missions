@@ -30,18 +30,16 @@ const initialState = {
 };
 
 jest.mock('axios', () => ({
-  get: jest.fn(() =>
-    Promise.resolve({
-      data: [
-        {
-          mission_id: 'a1',
-          mission_name: 'Test Mission',
-          description: 'This is a test mission',
-          reserved: false,
-        },
-      ],
-    }),
-  ),
+  get: jest.fn(() => Promise.resolve({
+    data: [
+      {
+        mission_id: 'a1',
+        mission_name: 'Test Mission',
+        description: 'This is a test mission',
+        reserved: false,
+      },
+    ],
+  })),
 }));
 
 describe('Profile Route', () => {
