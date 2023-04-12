@@ -1,10 +1,11 @@
 import MyMissions from '../components/profiles/MyMissions';
+import MyRockets from '../components/profiles/myRockets';
 
 const Profile = () => (
   <section className="profile">
     <MyMissions />
     <div className="myrockets">
-      <h2>My Rockets</h2>
+      <MyRockets />
     </div>
   </section>
 );
