@@ -38,6 +38,10 @@ body {
   text-decoration: none;
 }
 
+section {
+  margin: 15px 0;
+}
+
 .rocket-item {
   margin: 15px 0;
   display: flex;
@@ -67,4 +71,102 @@ body {
 .rocket-item button.cancel {
   border: 1px solid gray;
   background-color: transparent;
+}
+
+table {
+  border-color: #dee2e6;
+  border-collapse: collapse;
+}
+
+tbody,
+td,
+th,
+thead,
+tr {
+  border-color: inherit;
+  border-style: solid;
+  border-width: 0;
+  border-width: 1px 0;
+}
+
+thead {
+  height: 30px;
+}
+
+td,
+th {
+  padding: 5px;
+  border-color: inherit;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.t-name,
+.mission-name {
+  text-align: left;
+  font-weight: 700;
+}
+
+.t-status {
+  width: 90px;
+}
+
+.t-action {
+  width: 110px;
+}
+
+.join-status {
+  font-size: 10px;
+  line-break: unset;
+  text-align: center;
+  padding: 0 5px;
+  margin: auto;
+}
+
+.join-status span {
+  padding: 2px;
+  color: white;
+}
+
+.join-status span.reserved {
+  background-color: rgb(20, 228, 217);
+}
+
+.join-status span.unreserved {
+  background-color: var(--color-join);
+}
+
+.mission-action {
+  text-align: center;
+}
+
+.mission-action button {
+  padding: 5px;
+}
+
+.join-mission {
+  border: 1px solid var(--color-join);
+  color: var(--color-join);
+}
+
+.leave-mission {
+  border: 1px solid var(--color-leave);
+  color: var(--color-leave);
+}
+
+.mission-name {
+  vertical-align: initial;
+}
+
+.mission-decription {
+  padding-bottom: 20px;
+}
+
+.mission-item:nth-of-type(odd) {
+  background-color: #ededee;
+}
+
+:root {
+  --color-join: rgb(80, 80, 80);
+  --color-leave: rgb(248, 5, 5);
 }
