@@ -28,7 +28,9 @@
 Space Travelers' Hub - is a web application for a company that provides commercial and scientific space travel services. In the application users can book rockets and join selected space missions.
 
 ## 🛠 Screenshots <a name="screenshots"></a>
+
 N/A
+
 <!-- <img src="./src/img/screenshot_desktop.JPG" width="70%" alt="desktop screen" /> -->
 
 ## 🛠 Built With <a name="built-with"></a>
@@ -50,7 +52,8 @@ N/A
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🚀 Live Demo <a name="live-demo"></a>
-N/A
+
+[Demo link](https://travellers-hub.onrender.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -105,13 +108,12 @@ Example:
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 👥 Authors <a name="authors"></a>
-  
+
 👤 **Lornakaboro**
 
-- GitHub:  [@githubhandle](https://github.com/Lornakaboro)
+- GitHub: [@githubhandle](https://github.com/Lornakaboro)
 - Twitter: [@twitterhandle](https://twitter.com/KaboroLorna)
 - Linkedin [@linkedinprofile](https://www.linkedin.com/in/lorna-kaboro-23620b242/)
-  
 
 👤 **Damilare Adepoju**
 

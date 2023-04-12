@@ -9,6 +9,7 @@ const formatMissions = (missions) => missions.map(({ mission_name, mission_id, d
   mission_name,
   mission_id,
   description,
+  reserved: false,
 }));
 
 export default createAsyncThunk(
