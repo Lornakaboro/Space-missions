@@ -16,8 +16,8 @@ function Rockets() {
           <img src={rocket.image} alt={rocket.name} />
 
           <div className="rocket-info">
-            <h2>{rocket.name}</h2>
-            <p>
+            <h2 className="rocket-name">{rocket.name}</h2>
+            <p className="reservation-actions">
               {rocket.reserved && <span>reserved</span>}
               {' '}
               {rocket.description}
