@@ -5,11 +5,12 @@ const initialState = {
   missions: [],
   loading: false,
   error: null,
+  status: false,
 };
 
 const missionHandlerReducer = (state, { payload }) => ({
   ...state,
-  missions: state.missions.map((mission) => (mission.mission_id === payload
+  missions: state.missions.map((mission) => (mission.id === payload
     ? { ...mission, reserved: !mission.reserved }
     : mission)),
 });
@@ -31,6 +32,7 @@ const missionSlice = createSlice({
         loading: false,
         missions: payload,
         error: null,
+        status: true,
       }))
       .addCase(getMissions.rejected, (state, { payload }) => ({
         ...state,
