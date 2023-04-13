@@ -6,11 +6,11 @@ import getMissions from '../redux/missions/missionsThunk';
 const Missions = () => {
   const dispatch = useDispatch();
 
-  const { missions } = useSelector((store) => store.missions);
+  const { missions, status } = useSelector((store) => store.missions);
 
   useEffect(() => {
-    dispatch(getMissions());
-  }, [dispatch]);
+    if (!status) dispatch(getMissions());
+  }, [status, dispatch]);
 
   return (
     <section>
@@ -25,7 +25,7 @@ const Missions = () => {
         </thead>
         <tbody>
           {missions.map((item) => (
-            <Mission key={item.mission_id} mission={item} />
+            <Mission key={item.id} mission={item} />
           ))}
         </tbody>
       </table>

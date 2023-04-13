@@ -1,17 +1,16 @@
-/* eslint-disable  camelcase */
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
 import { missionHandler } from '../../redux/missions/missionsSlice';
 
 const Mission = ({ mission }) => {
   const {
-    mission_id, mission_name, description, reserved,
-  } = mission; // eslint-disable
+    id, name, description, reserved,
+  } = mission;
   const dispatch = useDispatch();
 
   return (
     <tr className="mission-item">
-      <td className="mission-name">{mission_name}</td>
+      <td className="mission-name">{name}</td>
       <td className="mission-decription">{description}</td>
       {reserved ? (
         <>
@@ -22,7 +21,7 @@ const Mission = ({ mission }) => {
             <button
               className="leave-mission"
               type="button"
-              onClick={() => dispatch(missionHandler(mission_id))}
+              onClick={() => dispatch(missionHandler(id))}
             >
               Leave Mission
             </button>
@@ -37,7 +36,7 @@ const Mission = ({ mission }) => {
             <button
               className="join-mission"
               type="button"
-              onClick={() => dispatch(missionHandler(mission_id))}
+              onClick={() => dispatch(missionHandler(id))}
             >
               Join Mission
             </button>
@@ -50,8 +49,8 @@ const Mission = ({ mission }) => {
 
 Mission.propTypes = {
   mission: PropTypes.shape({
-    mission_id: PropTypes.string,
-    mission_name: PropTypes.string.isRequired,
+    id: PropTypes.string,
+    name: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
     reserved: PropTypes.bool,
   }).isRequired,

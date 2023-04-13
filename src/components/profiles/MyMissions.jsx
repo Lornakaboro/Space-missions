@@ -9,7 +9,7 @@ const MyMissions = () => {
       {missions.length ? (
         <ul>
           {missions.map((mission) => (
-            <li key={mission.mission_id}>{mission.mission_name}</li>
+            <li key={mission.id}>{mission.name}</li>
           ))}
         </ul>
       ) : (

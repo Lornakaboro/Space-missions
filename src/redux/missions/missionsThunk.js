@@ -1,13 +1,11 @@
-/* eslint-disable  camelcase */
-
 import { createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
 const url = 'https://api.spacexdata.com/v3/missions';
 
-const formatMissions = (missions) => missions.map(({ mission_name, mission_id, description }) => ({
-  mission_name,
-  mission_id,
+const formatMissions = (dat) => dat.map(({ mission_name: name, mission_id: id, description }) => ({
+  name,
+  id,
   description,
   reserved: false,
 }));
