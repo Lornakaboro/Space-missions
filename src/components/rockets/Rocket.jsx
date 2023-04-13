@@ -10,15 +10,14 @@ function Rockets() {
   }, [status, dispatch]);
 
   return (
-    <div className="rocket-item">
+    <section>
       {rockets.map((rocket) => (
-        <div key={rocket.id} className="rocket-info">
+        <div key={rocket.id} className="rocket-item">
           <img src={rocket.image} alt={rocket.name} />
-
           <div className="rocket-info">
-            <h2>{rocket.name}</h2>
-            <p>
-              {rocket.reserved && <span>reserved</span>}
+            <h2 className="rocket-name">{rocket.name}</h2>
+            <p className="reservation-actions">
+              {rocket.reserved && <span className="reserved-span">reserved</span>}
               {' '}
               {rocket.description}
             </p>
@@ -26,7 +25,7 @@ function Rockets() {
           </div>
         </div>
       ))}
-    </div>
+    </section>
   );
 }
 
