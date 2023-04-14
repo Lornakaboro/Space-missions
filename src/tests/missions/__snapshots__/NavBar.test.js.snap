@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NavBar NavBar component matches snapshot 1`] = `
+<div
+  className="navbar"
+>
+  <img
+    alt="Space Traveler's Hub logo"
+    src="logo.png"
+  />
+  <span
+    className="nav-brand"
+  >
+    Space Traveler's Hub
+  </span>
+  <div
+    className="nav-links"
+  >
+    <a
+      className=""
+      href="/rockets"
+      onClick={[Function]}
+      style={
+        Object {
+          "color": "RGB(246, 141, 54)",
+          "textDecoration": "none",
+        }
+      }
+    >
+      Rockets
+    </a>
+    <a
+      className=""
+      href="/missions"
+      onClick={[Function]}
+      style={
+        Object {
+          "color": "RGB(246, 141, 54)",
+          "textDecoration": "none",
+        }
+      }
+    >
+      Missions
+    </a>
+    <a
+      className=""
+      href="/profile"
+      onClick={[Function]}
+      style={
+        Object {
+          "color": "RGB(246, 141, 54)",
+          "textDecoration": "none",
+        }
+      }
+    >
+      My Profile
+    </a>
+  </div>
+</div>
+`;

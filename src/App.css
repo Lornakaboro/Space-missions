@@ -1,0 +1,212 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f5f6fa;
+  width: 100%;
+  height: 100%;
+}
+
+#root {
+  padding: 0 20px;
+}
+
+.navbar {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  border-bottom: 2px solid grey;
+}
+
+.navbar img {
+  height: 40px;
+}
+
+.nav-links {
+  display: flex;
+  flex-grow: 1;
+  list-style-type: none;
+  justify-content: flex-end;
+  grid-gap: 40px;
+  gap: 40px;
+}
+
+.nav-links a {
+  text-decoration: none;
+}
+
+section {
+  margin: 15px 0;
+}
+
+.rocket-item {
+  margin: 15px 0;
+  display: flex;
+  gap: 20px;
+}
+
+.reserved-span {
+  padding: 2.5px;
+  background-color: rgb(20, 228, 217);
+  border-radius: 10%;
+}
+
+.rocket-info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.rocket-item img {
+  width: 220px;
+}
+
+.rocket-item button {
+  padding: 5px 10px;
+}
+
+.rocket-item button.reserve {
+  background-color: rgb(11, 11, 151);
+  color: white;
+  border: none;
+  width: 115px;
+}
+
+.rocket-item button.cancel {
+  border: 1px solid gray;
+  background-color: transparent;
+  width: fit-content;
+}
+
+table {
+  border-color: #dee2e6;
+  border-collapse: collapse;
+}
+
+tbody,
+td,
+th,
+thead,
+tr {
+  border-color: inherit;
+  border-style: solid;
+  border-width: 0;
+  border-width: 1px 0;
+}
+
+thead {
+  height: 30px;
+}
+
+td,
+th {
+  padding: 5px;
+  border-color: inherit;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.t-name,
+.mission-name {
+  text-align: left;
+  font-weight: 700;
+}
+
+.t-status {
+  width: 90px;
+}
+
+.t-action {
+  width: 110px;
+}
+
+.join-status {
+  font-size: 10px;
+  line-break: unset;
+  text-align: center;
+  padding: 0 5px;
+  margin: auto;
+}
+
+.join-status span {
+  padding: 2px;
+  color: white;
+}
+
+.join-status span.reserved {
+  background-color: rgb(20, 228, 217);
+}
+
+.join-status span.unreserved {
+  background-color: var(--color-join);
+}
+
+.mission-action {
+  text-align: center;
+}
+
+.mission-action button {
+  padding: 5px;
+}
+
+.join-mission {
+  border: 1px solid var(--color-join);
+  color: var(--color-join);
+}
+
+.leave-mission {
+  border: 1px solid var(--color-leave);
+  color: var(--color-leave);
+}
+
+.mission-name {
+  vertical-align: initial;
+}
+
+.mission-decription {
+  padding-bottom: 20px;
+}
+
+.mission-item:nth-of-type(odd) {
+  background-color: #ededee;
+}
+
+.profile {
+  display: flex;
+  gap: 40px;
+}
+
+.mymissions,
+.myrockets {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.profile ul {
+  list-style: none;
+  border: 1px solid var(--color-ul);
+  border-radius: 4px;
+}
+
+.profile li {
+  padding: 10px 20px;
+}
+
+.profile li:not(:last-child) {
+  border-bottom: 1px solid var(--color-ul);
+}
+
+.profile p {
+  margin-top: 20px;
+}
+
+:root {
+  --color-join: rgb(80, 80, 80);
+  --color-leave: rgb(248, 5, 5);
+  --color-ul: rgba(80, 80, 80, 0.5);
+}
